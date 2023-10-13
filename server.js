@@ -5,7 +5,6 @@ const server = fastify();
 
 const database = new databasePostgres();
 
-
 server.post("/videos", async (request, reply) => {
   const { title, description, duration } = request.body;
 
